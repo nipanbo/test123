@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="山野，一间以四季山野入馔的现代川菜餐厅。查看到店菜单、餐厅故事并在线订座。"
+    />
+    <meta name="theme-color" content="#1e2820" />
+    <title>山野 SHANYE · 现代川菜</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2326362b'/%3E%3Cpath d='M12 42 24 22l10 15 7-10 11 15M17 48h30' fill='none' stroke='%23f2eee5' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="山野首页">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" role="presentation">
+            <path d="M5 30 15.8 13 24 25.5 29.3 17 39 30" />
+            <path d="M8 35h28" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>山野</strong>
+          <small>SHANYE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">打开导航菜单</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="主要导航">
+        <a href="#menu">本季菜单</a>
+        <a href="#story">山野故事</a>
+        <a href="#space">空间</a>
+        <a href="#visit">到店</a>
+        <a class="button button--small button--light" href="#reservation">预留餐位</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">濮阳 · 渠村集</p>
+          <h1 class="hero__title reveal" id="hero-title">
+            一席山野<br />
+            <em>一城烟火</em>
+          </h1>
+          <p class="hero__intro reveal">
+            顺应四时，寻味山野。以当代手法重述川菜的本真与热烈，
+            在城市的灯火里，为你留一席自然。
+          </p>
+          <div class="hero__actions reveal">
+            <a class="button button--primary" href="#reservation">
+              立即订座
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link text-link--light" href="#menu">探索本季菜单</a>
+          </div>
+        </div>
+
+        <div class="hero__bottom">
+          <p>今日营业<br /><span>11:30 — 14:30 · 17:30 — 22:00</span></p>
+          <a class="scroll-cue" href="#story" aria-label="向下浏览">
+            <span>向下探索</span>
+            <i aria-hidden="true"></i>
+          </a>
+          <p class="hero__note">应季食材，每日限量供应</p>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>循时而食</span><b>✦</b><span>山野风物</span><b>✦</b><span>人间烟火</span><b>✦</b>
+          <span>循时而食</span><b>✦</b><span>山野风物</span><b>✦</b><span>人间烟火</span><b>✦</b>
+        </div>
+      </div>
+
+      <section class="intro section" id="story">
+        <div class="section-index reveal">
+          <span>01</span>
+          <p>OUR PHILOSOPHY</p>
+        </div>
+        <div class="intro__content">
+          <h2 class="display-title reveal">
+            把山的鲜，<br />
+            带到城的<span>桌前。</span>
+          </h2>
+          <div class="intro__copy reveal">
+            <p>
+              清晨从山里出发的笋、菌与野菜，跨越晨雾来到灶台。
+              我们只做一件事：尊重食材，认真做饭。
+            </p>
+            <a class="text-link" href="#space">认识山野 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="intro__visual">
+          <div class="intro__image image-frame reveal" role="img" aria-label="山间的竹林与雾气"></div>
+          <div class="intro__stamp reveal" aria-hidden="true">
+            <svg viewBox="0 0 150 150">
+              <defs>
+                <path id="stamp-circle" d="M75,75 m-55,0 a55,55 0 1,1 110,0 a55,55 0 1,1 -110,0" />
+              </defs>
+              <text>
+                <textPath href="#stamp-circle">FROM MOUNTAIN TO TABLE · SIMPLE &amp; TRUE · </textPath>
+              </text>
+              <path class="stamp-mountain" d="M43 84 61 58l15 20 13-17 19 24M55 91h41" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu" aria-labelledby="menu-title">
+        <div class="menu__header">
+          <div>
+            <div class="section-index reveal">
+              <span>02</span>
+              <p>SEASONAL MENU</p>
+            </div>
+            <h2 class="display-title reveal" id="menu-title">秋日 · <span>山味</span></h2>
+          </div>
+          <p class="menu__lead reveal">
+            秋雨过后，菌子丰腴，山笋清甜。<br />
+            从一口鲜汤开始，慢慢进入山野的秋天。
+          </p>
+        </div>
+
+        <div class="menu-filter reveal" role="tablist" aria-label="菜品分类">
+          <button class="is-active" type="button" role="tab" aria-selected="true" data-filter="all">全部</button>
+          <button type="button" role="tab" aria-selected="false" data-filter="starter">前菜</button>
+          <button type="button" role="tab" aria-selected="false" data-filter="main">热菜</button>
+          <button type="button" role="tab" aria-selected="false" data-filter="dessert">甜品</button>
+        </div>
+
+        <div class="dish-grid" data-dish-grid>
+          <article class="dish-card dish-card--large reveal" data-category="main">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/mushroom-soup.jpg"
+                alt="热气腾腾的菌菇汤"
+                loading="lazy"
+              />
+              <span class="dish-card__badge">主厨推荐</span>
+              <button class="favorite" type="button" aria-label="收藏松茸菌香鸡汤" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>汤 · SOUP</span><span>01</span>
+              </div>
+              <h3>松茸菌香鸡汤</h3>
+              <p>云南香格里拉松茸 · 散养土鸡 · 山泉水慢炖四小时</p>
+              <strong>¥128</strong>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="starter">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/okra.jpg"
+                alt="清爽的时令蔬菜沙拉"
+                loading="lazy"
+              />
+              <button class="favorite" type="button" aria-label="收藏山椒拌秋葵" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>前菜 · STARTER</span><span>02</span>
+              </div>
+              <h3>山椒拌秋葵</h3>
+              <p>鲜山椒 · 秋葵 · 发酵豆酱</p>
+              <strong>¥48</strong>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="main">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/rice.jpg"
+                alt="鲜香浓郁的炒饭"
+                loading="lazy"
+              />
+              <button class="favorite" type="button" aria-label="收藏牛肝菌炊饭" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>主食 · MAIN</span><span>03</span>
+              </div>
+              <h3>牛肝菌炊饭</h3>
+              <p>鲜牛肝菌 · 五常米 · 自制腊味</p>
+              <strong>¥88</strong>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="starter">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/wontons.jpg"
+                alt="精致的手工水饺"
+                loading="lazy"
+              />
+              <button class="favorite" type="button" aria-label="收藏红油手工抄手" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>前菜 · STARTER</span><span>04</span>
+              </div>
+              <h3>红油手工抄手</h3>
+              <p>手工鲜肉馅 · 汉源花椒 · 秘制红油</p>
+              <strong>¥58</strong>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="main">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/pork.jpg"
+                alt="炭火慢烤的肉类料理"
+                loading="lazy"
+              />
+              <button class="favorite" type="button" aria-label="收藏炭烤战斧猪排" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>热菜 · MAIN</span><span>05</span>
+              </div>
+              <h3>炭烤战斧猪排</h3>
+              <p>黑猪战斧 · 山野香料 · 炭火慢烤</p>
+              <strong>¥168</strong>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert">
+            <div class="dish-card__image image-frame">
+              <img
+                src="./assets/dessert.jpg"
+                alt="细腻的奶油甜品"
+                loading="lazy"
+              />
+              <button class="favorite" type="button" aria-label="收藏桂花米酿慕斯" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="dish-card__content">
+              <div class="dish-card__topline">
+                <span>甜品 · DESSERT</span><span>06</span>
+              </div>
+              <h3>桂花米酿慕斯</h3>
+              <p>金桂 · 糯米酒酿 · 柠檬奶油</p>
+              <strong>¥42</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__footer reveal">
+          <p>菜单随季节更迭，以当日食材为准</p>
+          <a class="button button--outline" href="#reservation">订一席秋味 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="space section" id="space" aria-labelledby="space-title">
+        <div class="space__gallery">
+          <div class="space__image space__image--main image-frame reveal" role="img" aria-label="暖光下的山野餐厅大厅"></div>
+          <div class="space__image space__image--detail image-frame reveal" role="img" aria-label="餐厅桌上的手作陶器"></div>
+          <span class="space__caption reveal">空间 · 器皿 · 日常</span>
+        </div>
+        <div class="space__content">
+          <div class="section-index reveal">
+            <span>03</span>
+            <p>OUR SPACE</p>
+          </div>
+          <h2 class="display-title reveal" id="space-title">
+            留白，<br />
+            也是<span>一种款待。</span>
+          </h2>
+          <p class="space__copy reveal">
+            原木、粗陶、微光，围绕一张张餐桌自然生长。
+            这里没有多余的装饰，只留下食物、交谈，
+            以及窗外缓慢流动的城市。
+          </p>
+          <dl class="space__facts reveal">
+            <div><dt>68</dt><dd>个舒适席位</dd></div>
+            <div><dt>03</dt><dd>间独立包房</dd></div>
+            <div><dt>12:00</dt><dd>自然采光</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="reservation" id="reservation" aria-labelledby="reservation-title">
+        <div class="reservation__leaf" aria-hidden="true"></div>
+        <div class="reservation__inner">
+          <div class="reservation__intro">
+            <p class="eyebrow reveal">RESERVATION</p>
+            <h2 class="display-title display-title--light reveal" id="reservation-title">
+              山野等你，<br />
+              共赴一餐。
+            </h2>
+            <p class="reveal">周末座位有限，建议提前 1—2 天预订。8 人以上聚餐请致电 028-8556 1226。</p>
+          </div>
+          <form class="reservation-form reveal" data-reservation-form novalidate>
+            <div class="form-row">
+              <label>
+                <span>到店日期</span>
+                <input type="date" name="date" required data-date />
+              </label>
+              <label>
+                <span>到店时间</span>
+                <select name="time" required>
+                  <option value="" disabled selected>选择时段</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+                  <option>12:30</option>
+                  <option>13:00</option>
+                  <option>17:30</option>
+                  <option>18:00</option>
+                  <option>18:30</option>
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:30</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>用餐人数</span>
+                <select name="guests" required>
+                  <option value="" disabled selected>选择人数</option>
+                  <option>1 位</option>
+                  <option>2 位</option>
+                  <option>3 位</option>
+                  <option>4 位</option>
+                  <option>5 位</option>
+                  <option>6 位</option>
+                  <option>8 位</option>
+                </select>
+              </label>
+              <label>
+                <span>联系电话</span>
+                <input type="tel" name="phone" placeholder="请输入手机号码" pattern="1[3-9]\d{9}" required />
+              </label>
+            </div>
+            <label class="form-full">
+              <span>称呼 / 特别需求（选填）</span>
+              <input type="text" name="note" placeholder="如：靠窗座位、生日用餐" />
+            </label>
+            <button class="button button--cream button--wide" type="submit">提交订位 <span aria-hidden="true">→</span></button>
+            <p class="form-note">提交后，我们会尽快与您确认座位。</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="visit section" id="visit" aria-labelledby="visit-title">
+        <div class="visit__heading">
+          <div class="section-index reveal">
+            <span>04</span>
+            <p>FIND US</p>
+          </div>
+          <h2 class="display-title reveal" id="visit-title">
+            城市一隅，<br />
+            等你<span>寻味。</span>
+          </h2>
+        </div>
+        <div class="visit__info">
+          <div class="visit__block reveal">
+            <p class="visit__label">地址</p>
+            <p>河南省濮阳市<br />渠村集</p>
+            <a class="text-link" href="https://maps.amap.com/" target="_blank" rel="noreferrer">查看地图 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="visit__block reveal">
+            <p class="visit__label">营业时间</p>
+            <p>周一至周日<br />午餐 11:30—14:30<br />晚餐 17:30—22:00</p>
+          </div>
+          <div class="visit__block reveal">
+            <p class="visit__label">联系</p>
+            <p><a href="tel:02885561226">028-8556 1226</a><br /><a href="mailto:hello@shanye.cn">hello@shanye.cn</a></p>
+          </div>
+        </div>
+        <div class="visit__map reveal" aria-hidden="true">
+          <svg viewBox="0 0 1200 380" preserveAspectRatio="none">
+            <path class="map-road map-road--wide" d="M-20 305C160 220 310 260 460 178S730 80 1220 38" />
+            <path class="map-road" d="M-40 120C180 185 330 130 520 220S880 330 1240 260" />
+            <path class="map-road" d="M250-20C220 92 310 190 270 400" />
+            <path class="map-road" d="M800-20C720 120 870 250 790 400" />
+            <path class="map-river" d="M-40 385C170 300 310 355 455 300s260-115 430-80 220 60 355 30" />
+          </svg>
+          <span class="map-label map-label--one">渠村集</span>
+          <span class="map-label map-label--two">濮阳市</span>
+          <span class="map-label map-label--three">河南省</span>
+          <span class="map-pin"><i></i><b>山野</b></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <a class="brand brand--footer" href="#top" aria-label="回到首页">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44" role="presentation">
+              <path d="M5 30 15.8 13 24 25.5 29.3 17 39 30" />
+              <path d="M8 35h28" />
+            </svg>
+          </span>
+          <span class="brand__text"><strong>山野</strong><small>SHANYE</small></span>
+        </a>
+        <p>顺时而食，认真生活。</p>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 山野餐饮</p>
+        <div class="footer__links">
+          <a href="#">微信公众号</a>
+          <a href="#">小红书</a>
+          <a href="#">隐私条款</a>
+        </div>
+        <a class="back-to-top" href="#top">回到顶部 ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="success-dialog" data-success-dialog>
+      <button class="success-dialog__close" type="button" aria-label="关闭" data-dialog-close>×</button>
+      <span class="success-dialog__icon" aria-hidden="true">✓</span>
+      <p class="eyebrow">RESERVATION RECEIVED</p>
+      <h2>期待与你<br />在山野相见</h2>
+      <p data-dialog-message>订位信息已收到，我们稍后将致电确认。</p>
+      <button class="button button--primary" type="button" data-dialog-close>好的</button>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
